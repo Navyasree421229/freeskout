@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: comic sans ms,cursive;
+}
+.main{
+    background-image: url(https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlnaHQlMjBza3l8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+    background-position: center;
+    background-size: cover;
+}
+.row-one{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    z-index: 999;
+    top:0;
+    left: 0;
+}
+.logo img{
+    width: 45px;
+    height: 50px;
+    margin-left: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+nav{
+    margin-left: 500px;
+    margin-top: 40px;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(146, 143, 143);
+    font-size: 13px;
+    margin:0px 20px;
+}
+nav ul li a:hover{
+    color: silver;
+}
+.row-two{
+    display: flex;
+    flex-direction: row;
+}
+.text-one{
+    width: 900px;
+    height: 500px;
+}
+.img-one{
+    width: 700px;
+    height: 500px;
+}
+.text-one h1{
+    font-size: 42px;
+    margin-left: 100px;
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.text-one p{
+    font-size: 20px;
+    color: silver;
+    margin-left: 100px;
+}
+.text-one button{
+    font-size: 16px;
+    color: black;
+    background-color: rgb(43, 206, 92);
+    margin-left: 50px;
+    margin-top: 30px;
+    padding-top: 7px;
+    text-align: center;
+    width: 240px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.img-one img{
+    margin-top: 80px;
+    width: 500px;
+}
+section{
+    overflow: hidden;
+}
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(http://front-end-noobs.com/jecko/img/wave-top.png);
+    background-size: 1000px 100px;
+
+}
+section .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 0.8;
+    animation-delay: 0s;
+    bottom: 0;
+}
+@keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+section .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+@keyframes animate2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
+}
+section .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.5;
+    animation-delay: -2s;
+    bottom: 15;
+}
+.row-three{
+    height: 800px;
+    width: 100%;
+    background-image:linear-gradient(white, rgb(196, 233, 196));
+}
+.row-three-one{
+    display: flex;
+    flex-direction: row;
+}
+.row-three-one .img-two img{
+    width:300px;
+    height: 380px;
+    margin-top: 120px;
+    margin-left: 120px;
+}
+.row-three-one .col-one{
+    width:350px;
+    margin-top: 110px;
+    margin-left: 50px;
+}
+.row-three-one .col-one p{
+    color: rgb(62, 243, 83);
+    font-size: 25px;
+}
+.row-three-one .col-one h2{
+    font-size: 35px;
+}
+.row-three-one .col-one h6{
+    color: rgb(137, 132, 132);
+    font-size: 14px;
+    margin: 20px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.row-three-one .col-one h5{
+    color: rgb(62, 243, 83);
+    font-size: 15px;
+}
+.row-three-one .col-two{
+    width:350px;
+    margin-top: 110px;
+    margin-left: 150px;
+}
+.row-three-one .col-two h1{
+    font-size: 70px;
+    color: rgb(62, 243, 83);
+    font-weight: 100px;
+}
+.row-three-one .col-two h4{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: rgb(97, 111, 125);
+}
+.row-three-two{
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+}
+.row-three-two .col-one h4{
+    font-size: 20px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+.row-three-two .col-one p{
+    color: rgb(137, 132, 132);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-left: 120px;
+    line-height: 20px;
+}
+.row-three-two .col-two h4{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.row-three-two .col-two p{
+    color: rgb(137, 132, 132);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-left: 30px;
+    line-height: 20px;
+    margin-right: 60px;
+    text-align: left;
+}
+.row-three-two .col-three h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.row-three-two .col-three p{
+    color: rgb(137, 132, 132);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+.row-three-two .col-four h4{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.row-three-two .col-four p{
+    color: rgb(137, 132, 132);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-left: 30px;
+    line-height: 20px;
+}
+.row-four{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.row-four .row-four-one img{
+    width: 300px;
+    height: 400px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.row-four .row-four-two h4{
+    color: rgb(62, 243, 83);
+    font-size: 22px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-left: 150px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.row-four .row-four-two h1{
+    font-size: 35px;
+    margin-right: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.row-four .row-four-two h6{
+    font-size: 15px;
+    color: rgb(137, 132, 132);
+    margin-right: 120px;
+    margin-left: 150px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 25px;
+}
+.row-five{
+    background-image: linear-gradient(white,rgb(175, 205, 175));
+    height: 560px;
+}
+.row-five h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 80px 0;
+    margin-bottom: 40px;
+}
+.row-five img{
+    width:100px;
+    height:100px;
+    margin:20px 10px;
+}
+.row-five img .exe{
+    padding: 20px 10px;
+    width:80px;
+    height:80px;
+    margin:0 10px;
+}
+.row-six{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(white,rgb(224, 239, 224));
+}
+.row-six .row-six-one{
+    width: 280px;
+    height: 400px;
+    margin-left: 80px;
+    margin-top: 250px;
+}
+.row-six .row-six-one p{
+    color: rgb(62, 243, 83);
+    font-size: 20px;
+}
+.row-six .row-six-one h1{
+    font-size: 40px;
+}
+.row-six .row-six-one h6{
+    font-size: 15px;
+    color: rgb(93, 90, 90);
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+.row-six .row-six-one button{
+    padding: 15px 20px;
+    background-color: rgb(62, 243, 83);
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 2px silver;
+}
+.row-six-two{
+    margin-top: 300px;
+    margin-left: 250px;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 5px silver;
+    position: relative;
+    top: 100px;
+    
+}
+.row-six-three{
+    margin-top: 300px;
+    margin-left: 30px;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 5px silver;
+    position: relative;
+    top: 100px;
+    
+}
+.im1{
+    display: flex;
+    animation: slide 16s infinite;
+}
+.im1 .img1{
+    margin-left: 270px;
+    position: relative;
+    top: 45px;
+}
+.im1 .img2{
+    width:333px;
+    height: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.im1 button{
+    padding: 10px;
+    background-color: rgb(62, 243, 83);
+    border-radius: 20px;
+    margin-left: 10px;
+    border: none;
+    
+}
+.im1 h3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.im1-one{
+    display: flex;
+    flex-direction: row;
+}
+.im1-one img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.im1-one p{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.im1 small{
+    margin-left: 80px;
+    position: relative;
+    bottom: 20px;
+    color: rgb(137, 132, 132);
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.row-sev{
+    background:  rgb(62, 243, 83);
+    display: flex;
+    flex-direction: row;
+}
+.row-sev p{
+    width:180px;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: white;
+    margin-right: 700px;
+    margin-bottom: 15px;
+}
+.row-sev h4{
+    font-size: 30px;
+    margin-right: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+.row-egi{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+.row-egi .row-egi-one{
+    width:330px;
+}
+.row-egi-one h2{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.row-egi-one p{
+    color: rgb(137, 132, 132);
+}
+.row-egi-two{
+    margin:0 120px;
+}
+.row-egi-two h6{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.row-egi-two p{
+    color: rgb(137, 132, 132);
+}
+.row-egi-three h6{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.row-egi-three p{
+    color: rgb(137, 132, 132);
+}
+.row-nine{
+    text-align: center;
+    margin-top: 50px;
+    background-image: linear-gradient(white,rgb(194, 216, 194));
+}
+.row-nine h5{
+    color: rgb(137, 132, 132);
+    font-size: 15px;
+}
